@@ -49,7 +49,7 @@ export default function Events() {
 
   return (
     <section
-      className="relative w-full h-[64vh] md:min-h-[75vh] lg:min-h-[90vh] overflow-hidden flex flex-col items-center justify-start gap-6 sm:gap-8 md:gap-12 sm:bg-cover bg-center bg-no-repeat"
+      className="relative w-full min-h-[65vh] md:min-h-[75vw] lg:min-h-[90vh] overflow-x-hidden flex flex-col items-center justify-start gap-6 sm:gap-8 md:gap-12 pb-12 sm:bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/images/events.png')",
       }}
