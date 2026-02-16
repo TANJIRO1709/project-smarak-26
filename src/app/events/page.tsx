@@ -201,33 +201,7 @@ export default function EventsPage() {
             {/* Scrolling Text Banner */}
             <Slider />
 
-            {/* Category Cards */}
-            <section className="py-12 px-4">
-                <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {categories.map((category) => (
-                            <div
-                                key={category.id}
-                                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                            >
-                                <div
-                                    className="h-48"
-                                    style={{ backgroundColor: category.color }}
-                                ></div>
-                                <div className="bg-gradient-to-br from-[#F5A86E] to-[#F08A3C] py-4">
-                                    <h3
-                                        className="text-2xl font-bold text-center text-[#5A1A0F]"
-                                        style={{ fontFamily: "Saman, serif" }}
-                                    >
-                                        {category.name}
-                                    </h3>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
+           
            
         </div>
     );
