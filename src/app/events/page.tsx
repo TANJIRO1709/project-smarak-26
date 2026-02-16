@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import { Poppins } from 'next/font/google';
-
+import Slider from "@/componets/slider"
 const poppins = Poppins({ 
   subsets: ['latin'],
   weight: ['400', '500', '600', '700']
@@ -142,21 +142,7 @@ export default function EventsPage() {
       </section>
 
       {/* Scrolling Text Banner */}
-      <div className="bg-[#8B1A1A] py-3 overflow-hidden">
-        <div className="whitespace-nowrap animate-scroll">
-          <span className="text-[#F5DEB3] text-xl font-bold mx-8" style={{ fontFamily: 'Saman, serif' }}>
-            shaping architecture through engineering thought
-          </span>
-          <span className="text-[#F5DEB3] text-xl mx-4">||</span>
-          <span className="text-[#F5DEB3] text-xl font-bold mx-8" style={{ fontFamily: 'Saman, serif' }}>
-            shaping architecture through engineering thought
-          </span>
-          <span className="text-[#F5DEB3] text-xl mx-4">||</span>
-          <span className="text-[#F5DEB3] text-xl font-bold mx-8" style={{ fontFamily: 'Saman, serif' }}>
-            shaping architecture through engineering thought
-          </span>
-        </div>
-      </div>
+      <Slider/>
 
       {/* Workshop & Seminar Section */}
       <section className="py-12 px-4">
@@ -194,21 +180,7 @@ export default function EventsPage() {
       </section>
 
       {/* Scrolling Text Banner */}
-      <div className="bg-[#8B1A1A] py-3 overflow-hidden mb-12">
-        <div className="whitespace-nowrap animate-scroll">
-          <span className="text-[#F5DEB3] text-xl font-bold mx-8" style={{ fontFamily: 'Saman, serif' }}>
-            shaping architecture through engineering thought
-          </span>
-          <span className="text-[#F5DEB3] text-xl mx-4">||</span>
-          <span className="text-[#F5DEB3] text-xl font-bold mx-8" style={{ fontFamily: 'Saman, serif' }}>
-            shaping architecture through engineering thought
-          </span>
-          <span className="text-[#F5DEB3] text-xl mx-4">||</span>
-          <span className="text-[#F5DEB3] text-xl font-bold mx-8" style={{ fontFamily: 'Saman, serif' }}>
-            shaping architecture through engineering thought
-          </span>
-        </div>
-      </div>
+    <Slider/>
 
       {/* Category Cards */}
       <section className="py-12 px-4">

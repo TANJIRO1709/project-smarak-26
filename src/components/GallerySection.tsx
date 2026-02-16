@@ -8,7 +8,7 @@ import { galleryImages } from "../app/config/gallery";
 
 export default function GallerySection() {
     return (
-      
+      <div id="gallery">
         <div className="relative font-saman w-full overflow-hidden bg-[#F0EAD6] h-auto py-8 lg:h-screen lg:py-0">
 
   
@@ -52,6 +52,7 @@ export default function GallerySection() {
                     </Marquee>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

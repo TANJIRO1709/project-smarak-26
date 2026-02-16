@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 const Footer = () => {
     return (
+        <div id="contact">
         <section className="relative w-full bg-[url('/images/bg.png')] bg-cover bg-center overflow-hidden">
             <div className="absolute inset-0 bg-[#f5e6cc]/5"></div>
 
@@ -79,6 +80,7 @@ const Footer = () => {
                 </div>
             </div>
         </section>
+        </div>
     )
 }
 

@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 lg:gap-6">
             <div className={`hidden lg:flex items-center space-x-6 xl:space-x-8 ${poppins.className}`}>
               <Link 
-                href="/about" 
+                href="#about" 
                 className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
               >
                 About Us
@@ -43,19 +43,19 @@ export default function Navbar() {
                 Events
               </Link>
               <Link 
-                href="/gallery" 
+                href="#gallery" 
                 className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
               >
                 Gallery
               </Link>
               <Link 
-                href="/teams" 
+                href="#mission" 
                 className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
               >
-                Teams
+                Our mission 
               </Link>
               <Link 
-                href="/contact" 
+                href="#contact" 
                 className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
               >
                 Contact Us
@@ -67,7 +67,7 @@ export default function Navbar() {
                 href="/signin"
                 className="border-2 border-[#F5DEB3] text-[#F5DEB3] hover:bg-[#F5DEB3] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
               >
-                Sign in
+                Register
               </Link>
             </div>
 
