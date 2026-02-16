@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import Image from "next/image";
 import toast from "react-hot-toast";
@@ -15,32 +15,30 @@ const Footer = () => {
 
       {/* Top Cards */}
       <div className="relative z-20 py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-  {footerCards.map((card) => (
-    <div
-      key={card.id}
-      className="rounded-3xl overflow-hidden shadow-lg border-[6px] border-[#f5b461]"
-    >
-      {/* Image Section */}
-      <div className="relative h-56">
-        <Image
-          src={card.image}
-          alt={card.title}
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#b83a2f]/70 to-[#8b2a1f]/70" />
-      </div>
+        {footerCards.map((card) => (
+          <div
+            key={card.id}
+            className="rounded-3xl overflow-hidden shadow-lg border-[6px] border-[#f5b461]"
+          >
+            {/* Image */}
+            <div className="relative h-56">
+              <Image
+                src={card.image}
+                alt={card.title}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#b83a2f]/70 to-[#8b2a1f]/70" />
+            </div>
 
-      {/* Title */}
-      <div className="bg-gradient-to-b from-[#f5b461] to-[#e8a047] py-4">
-        <h3 className="text-center text-[#7a1a0f] font-serif text-3xl tracking-wide">
-          {card.title}
-        </h3>
-      </div>
-    </div>
-  ))}
-</div>
+            {/* Title */}
+            <div className="bg-gradient-to-b from-[#f5b461] to-[#e8a047] py-4">
+              <h3 className="text-center text-[#7a1a0f] font-serif text-3xl tracking-wide">
+                {card.title}
+              </h3>
+            </div>
+          </div>
         ))}
       </div>
 
@@ -80,7 +78,6 @@ const Footer = () => {
               </h4>
 
               <div className="font-serif text-lg text-gray-200 space-y-2">
-
                 <p>
                   <button
                     onClick={() => toast("🚧 Coming Soon")}
@@ -116,7 +113,6 @@ const Footer = () => {
                     +91 90788 10869
                   </a>
                 </p>
-
               </div>
             </div>
 
