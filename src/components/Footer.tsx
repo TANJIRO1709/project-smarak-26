@@ -1,8 +1,9 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import Image from "next/image";
 import toast from "react-hot-toast";
+import { footerCards } from "@/config/footerCards";
 
 const Footer = () => {
   return (
@@ -14,23 +15,32 @@ const Footer = () => {
 
       {/* Top Cards */}
       <div className="relative z-20 py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-        {["find us here", "team smarak", "nit rourkela"].map((title, i) => (
-          <div
-            key={i}
-            className="rounded-3xl overflow-hidden shadow-lg border-[6px] border-[#f5b461]"
-          >
-            <div className="bg-gradient-to-b from-[#b83a2f] to-[#8b2a1f] h-56 flex items-center justify-center">
-              <span className="text-white/30 text-3xl font-serif">
-                image
-              </span>
-            </div>
+  {footerCards.map((card) => (
+    <div
+      key={card.id}
+      className="rounded-3xl overflow-hidden shadow-lg border-[6px] border-[#f5b461]"
+    >
+      {/* Image Section */}
+      <div className="relative h-56">
+        <Image
+          src={card.image}
+          alt={card.title}
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#b83a2f]/70 to-[#8b2a1f]/70" />
+      </div>
 
-            <div className="bg-gradient-to-b from-[#f5b461] to-[#e8a047] py-4">
-              <h3 className="text-center text-[#7a1a0f] font-serif text-3xl tracking-wide">
-                {title}
-              </h3>
-            </div>
-          </div>
+      {/* Title */}
+      <div className="bg-gradient-to-b from-[#f5b461] to-[#e8a047] py-4">
+        <h3 className="text-center text-[#7a1a0f] font-serif text-3xl tracking-wide">
+          {card.title}
+        </h3>
+      </div>
+    </div>
+  ))}
+</div>
         ))}
       </div>
 
