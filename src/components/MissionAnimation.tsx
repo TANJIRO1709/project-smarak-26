@@ -41,6 +41,7 @@ export default function MissionAnimation() {
   }, []);
 
   return (
+    <div id="mission">
     <div className="relative font-saman flex w-full items-center justify-center overflow-hidden bg-[#F0EAD6] h-auto min-h-[350px] py-12 lg:h-[900px] lg:py-0">
       
 
@@ -149,6 +150,7 @@ export default function MissionAnimation() {
           })}
         </motion.div>
       </div>
+    </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Slider from "./slider";
 const Aboutus = () => {
     return (
         <>
+        <div id="about">
             <section className="relative w-full py-16 md:py-20 lg:py-24 bg-[url('/images/bg.png')] bg-cover bg-center">
                 <div className="absolute inset-0 bg-[#f5e6cc]/20"></div>
 
@@ -53,6 +54,7 @@ const Aboutus = () => {
             </section>
 
             <Slider />
+            </div>
         </>
     );
 };

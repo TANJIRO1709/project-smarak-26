@@ -27,50 +27,51 @@ export default function Navbar() {
                         </Link>
                     </div>
 
+                    {/* Right side: Navigation Links and Sign In Button */}
                     <div className="flex items-center gap-4 lg:gap-6">
                         <div
                             className={`hidden lg:flex items-center space-x-6 xl:space-x-8 ${poppins.className}`}
                         >
                             <Link
                                 href="/about"
-                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
+                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
                             >
                                 About Us
                             </Link>
                             <Link
                                 href="/events"
-                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base"
+                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
                             >
                                 Events
                             </Link>
                             <Link
                                 href="/gallery"
-                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base"
+                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
                             >
                                 Gallery
                             </Link>
                             <Link
                                 href="/teams"
-                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base"
+                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base"
                             >
                                 Teams
                             </Link>
                             <Link
                                 href="/contact"
-                                className="text-[#FB9F2F] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
+                                className="text-[#F5DEB3] hover:text-white transition-colors font-normal text-sm xl:text-base whitespace-nowrap"
                             >
                                 Contact Us
                             </Link>
                         </div>
 
-                        {/* <div className={`hidden lg:block ${poppins.className}`}>
+                        <div className={`hidden lg:block ${poppins.className}`}>
                             <Link
                                 href="/signin"
-                                className="border-2 border-[#FB9F2F] text-[#FB9F2F] hover:bg-[#FB9F2F] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
+                                className="border-2 border-[#F5DEB3] text-[#F5DEB3] hover:bg-[#F5DEB3] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
                             >
                                 Sign in
                             </Link>
-                        </div> */}
+                        </div>
 
                         {/* Mobile menu button */}
                         <div className="lg:hidden">
@@ -113,35 +114,35 @@ export default function Navbar() {
                     >
                         <Link
                             href="/about"
-                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             About Us
                         </Link>
                         <Link
                             href="/events"
-                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Events
                         </Link>
                         <Link
                             href="/gallery"
-                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Gallery
                         </Link>
                         <Link
                             href="/teams"
-                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Teams
                         </Link>
                         <Link
                             href="/contact"
-                            className="block text-[#FB9F2F] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
+                            className="block text-[#F5DEB3] hover:bg-[#A64848] transition-all duration-200 font-normal py-3 px-4 mx-2 rounded-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Contact Us
@@ -149,7 +150,7 @@ export default function Navbar() {
                         <div className="pt-2 px-2">
                             <Link
                                 href="/signin"
-                                className="block border-2 border-[#FB9F2F] text-[#FB9F2F] hover:bg-[#FB9F2F] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center"
+                                className="block border-2 border-[#F5DEB3] text-[#F5DEB3] hover:bg-[#F5DEB3] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Sign in

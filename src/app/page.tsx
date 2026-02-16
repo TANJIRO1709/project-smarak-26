@@ -3,14 +3,17 @@ import About from "../components/About";
 import MissionAnimation from "../components/MissionAnimation";
 import GallerySection from "../components/GallerySection";
 import Slider from "@/components/slider";
+import Events from "@/components/Events";
 export default function Home() {
     return (
-        <div className="">
+        <div className="min-h-screen bg-white">
+            <Navbar />
             <Hero />
             <About />
             <MissionAnimation />
             <Slider />
             <GallerySection />
+            <Footer />
         </div>
     );
 }
