@@ -1,7 +1,6 @@
 export const galleryImages = [
-    "team.webp",
-    "image2.webp",
-    "image3.webp",
-    "image4.webp",
-
+  "/images/team.webp",
+  "/images/image2.webp",
+  "/images/image3.webp",
+  "/images/image4.webp",
 ];
