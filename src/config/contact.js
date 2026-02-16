@@ -13,6 +13,6 @@ export const footerCards = [
   {
     id: 3,
     title: "NIT Rourkela",
-    image: "/images/nitr.webp",
+    image: "/images/nitr.jpg",
   },
 ];
