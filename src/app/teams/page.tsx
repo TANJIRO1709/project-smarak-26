@@ -5,17 +5,6 @@ import Image from "next/image";
 import Slider from "@/components/slider";
 
 function Page() {
-  const teamSections = [
-    {
-      title: "Core Team",
-      type: "core",
-    },
-    {
-      title: "Coordinators",
-      type: "coordinators",
-    },
-
-  ];
 
   return (
     <>
@@ -59,6 +48,7 @@ function Page() {
           </div>
         </section>
       </div>
+      <Slider/>
     </>
   );
 }
