@@ -5,7 +5,7 @@ import Image from "next/image";
 import Slider from "@/components/slider";
 import CoreTeam from "@/components/CoreTeam";
 import Coordinators from "@/components/Coordinators";
-import Patron from "@/components/Patron";
+import Patron from "@/components/Patrons";
 
 function Page() {
 
